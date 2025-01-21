@@ -1,0 +1,543 @@
+body {
+    background-color: #7940fe;
+}
+
+.container-p {
+    padding-bottom: 10px;
+    padding-left: 7%;
+    padding-right: 7%;
+ 
+     position: relative;
+}
+
+#portfolio {
+    padding: 50px 0;
+    background: rgba(255, 255, 255, 0);
+}
+.sub-title{           
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+    font-family: "Titan One", cursive;
+    letter-spacing: 2.5px;
+    text-align: center;
+ 
+ }
+.wep {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.out-top {
+    animation: rotate 20s linear infinite;
+    transform-origin: 13px 25px;
+}
+
+.in-top {
+    animation: rotate 10s linear infinite;
+    transform-origin: 13px 25px;
+}
+
+.out-bottom {
+    animation: rotate 25s linear infinite;
+    transform-origin: 84px 93px;
+}
+
+.in-bottom {
+    animation: rotate 15s linear infinite;
+    transform-origin: 84px 93px;
+}
+
+.work-list {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.info {
+    font-weight: 600;
+    color: #fff;
+    font-family: "Titan One", cursive;
+}
+
+.work {
+
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    
+
+}
+
+
+/* For the right-aligned item */
+.work-right {
+    flex-direction: row-reverse; /* Reverses the order of content, placing the image on the right */
+}
+.work-right .info{
+    margin-left: 60px;
+ }
+ .work-list img{
+    margin-right: 20px;
+ }
+
+/* Ensures proper positioning of the container on the left */
+.work-left {
+    flex-direction: row; /* Default row direction, image stays on the left */
+}
+.Btn1 {
+    position: relative;
+    display: flex;
+    margin-top: 15px;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap; /* This will make the items wrap to the next line when space is exhausted */
+
+    cursor: pointer;
+}
+
+.language {
+    position: relative;
+    font-size: 14px;
+    background-color: rgb(151, 95, 255);
+    box-shadow: 3px 10px 10px #2b0444 inset, 7px 10px 10px rgb(5 5 5), 0px -10px 10px rgb(124, 54, 255) inset;
+    transition: transform 0.4s ease;
+}
+
+.language:hover {
+    animation: jello-horizontal 0.9s both;
+}
+
+@keyframes jello-horizontal {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.languages-container {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.language {
+    padding: 8px 12px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.points {
+    list-style-type: none;
+    padding: 0;
+    margin-top: -25px;
+}
+
+.point::before {
+    content: "➤ "; /* Use a bolder arrow symbol */
+    color: #000000; /* Deep purple color */
+    font-size: 24px; /* Increase size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-family: 'Titan One', cursive;
+}
+
+.point {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333; /* Text color */
+    margin-right: 10px;
+}
+
+.work p {
+    color: white;
+}
+
+.work h3 {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+  .work img {
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s ease;
+    height: 300px;
+    margin-left: 15px;
+
+
+}
+  .work img:hover  {
+    transform: scale(1.1); /* Zoom in */
+    
+}
+ 
+
+.work-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.info {
+    max-width: 60%;
+}
+
+.buttons {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 20px;
+}
+
+  
+ 
+ /* From Uiverse.io by Creatlydev */ 
+ .buttonw {
+    height: 40px;
+    line-height: 1;
+    text-decoration: none;
+    display: inline-flex;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    gap: 0.75rem;
+    background-color: #000000;
+    color: #fff;
+    border-radius: 10rem;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    padding-left: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: background-color 0.3s;
+    font-family: 'Titan One', cursive;
+    font-size: 15px;
+  }
+  
+  .button__icon-wrapper {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    color: #000000;
+    background-color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+  }
+  
+ 
+  
+  .buttonw:hover .button__icon-wrapper {
+    color: var(--clr);
+  }
+  
+  .button__icon-svg--copy {
+    position: absolute;
+    transform: translate(-150%, 150%);
+  }
+  
+  .buttonw:hover .button__icon-svg:first-child {
+    transition: transform 0.3s ease-in-out;
+    transform: translate(150%, -150%);
+  }
+  
+  .buttonw:hover .button__icon-svg--copy {
+    transition: transform 0.3s ease-in-out 0.1s;
+    transform: translate(0);
+  }
+  
+  .button__icon-svg button__icon-svg--copy{
+    height: 20px;
+  }
+ 
+ 
+  .work{
+   color: #9982ff;
+   box-shadow: inset 0 0 10px rgba(10, 121, 102, 0.6), 0 0 9px 3px rgba(40, 23, 117, 0.945);
+ } 
+ 
+ 
+ .buttons {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+ }
+ 
+ .btn {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+ }
+ 
+ .btn:hover {
+    background-color: #0056b3;
+ }
+ 
+ 
+ /* From Uiverse.io by Mangesh636 */ 
+ .buttond {
+    height: 40px;
+    font-size: 15px;
+    font-family: 'Titan One', cursive;
+    background: black;
+    position: relative;
+    padding: 3px 10px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #000000;
+    border-radius: 25px;
+    outline: none;
+    overflow: hidden;
+    color: #ffffff;
+    transition: color 0.3s 0.1s ease-out;
+    text-align: center;
+  }
+  
+  .buttond span {
+    margin: 10px;
+  }
+  
+  
+ 
+  
+ /* .work:before {
+   content: "";
+   position: absolute;
+   left: -4em;
+   width: 4em;
+   height: 100%;
+   top: 0;
+   transition: transform .4s ease-in-out;
+   background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%,rgba(27, 253, 156, 0.1) 60% , transparent 100%);
+ } */
+ 
+ .work:hover:before {
+   transform: translateX(15em);
+ 
+ }
+ 
+ 
+ .button {
+    margin: 50px auto ;
+    transition: 0.5s;
+    position: relative;
+    width: 120px;
+    height: 40px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+    padding: 12px;
+    gap: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    font-family: "Titan One", cursive;
+  }
+  
+  .button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    left: -4px;
+    top: -1px;
+    margin: auto;
+    width: 128px;
+    height: 48px;
+    border-radius: 10px;
+    background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
+    z-index: -10;
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .button::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
+    transform: translate3d(0, 0, 0) scale(0.95);
+    filter: blur(20px);
+  }
+  
+  .button:hover::after {
+    filter: blur(30px);
+  }
+  
+  .button:hover::before {
+    transform: rotate(-180deg);
+  }
+  
+  .button:active::before {
+    scale: 0.7;
+  }
+ 
+ 
+ 
+ 
+  .button1{
+    display: block;
+    margin: 50px;
+    width: fit-content;
+    
+    text-decoration: none;
+    color: #fff;
+ }
+ 
+ 
+  .button1 {
+    position: relative;
+    padding: 10px 22px;
+    border-radius: 6px;
+    border: none;
+    font-weight: 600;
+    font-family: "Titan One", cursive;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    transition: all 0.2s ease;
+    margin-left: 0;
+  }
+ 
+  
+  .button1:active {
+    transform: scale(0.96);
+    text-decoration: none;
+  }
+  
+  .button1:before,
+  .button1:after {
+    position: absolute;
+    content: "";
+    width: 150%;
+    left: 50%;
+    height: 100%;
+    transform: translateX(-50%);
+    z-index: -1000;
+    background-repeat: no-repeat;
+  }
+  
+  .button1:hover{
+    text-decoration: none;
+  }
+  .button1:hover:before {
+    top: -70%;
+    background-image: radial-gradient(circle, #15a0b3 20%, transparent 20%),
+      radial-gradient(circle, transparent 20%, #0a949e 20%, transparent 30%),
+      radial-gradient(circle, #8a1964 20%, transparent 20%),
+      radial-gradient(circle, #92067f 20%, transparent 20%),
+      radial-gradient(circle, transparent 10%, #ca16ac 15%, transparent 20%),
+      radial-gradient(circle, #084de2 20%, transparent 20%),
+      radial-gradient(circle, #dd0ca9 20%, transparent 20%),
+      radial-gradient(circle, #d40edb 20%, transparent 20%),
+      radial-gradient(circle, #6909e6 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+      10% 10%, 18% 18%;
+    background-position: 50% 120%;
+    animation: greentopBubbles 0.6s ease;
+  }
+  
+  @keyframes greentopBubbles {
+    0% {
+      background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+        40% 90%, 55% 90%, 70% 90%;
+    }
+  
+    50% {
+      background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+        50% 50%, 65% 20%, 90% 30%;
+    }
+  
+    100% {
+      background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+        50% 40%, 65% 10%, 90% 20%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+  }
+  
+  .button1:hover::after {
+    bottom: -70%;
+    background-image: radial-gradient(circle, #c50870 20%, transparent 20%),
+      radial-gradient(circle, #6f00ff 20%, transparent 20%),
+      radial-gradient(circle, transparent 10%, #d61cd6 15%, transparent 20%),
+      radial-gradient(circle, #e41258 20%, transparent 20%),
+      radial-gradient(circle, #d81546 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #532b88 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+    background-position: 50% 0%;
+    animation: greenbottomBubbles 0.6s ease;
+  }
+  
+  @keyframes greenbottomBubbles {
+    0% {
+      background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+        70% -10%, 70% 0%;
+    }
+  
+    50% {
+      background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+        105% 0%;
+    }
+  
+    100% {
+      background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+        110% 10%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+  }
